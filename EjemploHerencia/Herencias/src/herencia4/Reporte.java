@@ -10,5 +10,23 @@ package herencia4;
  * @author reroes
  */
 public class Reporte {
-   protected String codigo;
+    protected String codigo;
+    
+    public Reporte (String c) {
+        codigo = c;
+    }
+
+    public String obtenerCodigo() {
+        return codigo;
+    }
+
+    public void eltablecerCodigo(String c) {
+        codigo = c;
+    }
+    
+    @Override
+    public String toString () {
+        String cadena = String.format("Codigo del reporte: %s", codigo);
+        return cadena;
+    }
 }

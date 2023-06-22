@@ -17,9 +17,9 @@ public class Persona {
     protected int edad;
     
     public Persona(String n, String a,  int e){
-        setNombre(n);
-        setApellido(a);
-        setEdad(e);
+        nombre = n;
+        apellido = a;
+        edad = e;
     }
     
     public void setNombre(String n){
@@ -50,7 +50,6 @@ public class Persona {
     public String toString(){
         return String.format("Nombre: %s - Apellido %s - Edad %d", 
                 getNombre(), getApellido(), getEdad());
-    }
-    
+    }   
     
 }

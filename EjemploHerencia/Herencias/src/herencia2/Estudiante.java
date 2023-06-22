@@ -15,7 +15,7 @@ public class Estudiante extends Persona{
     
     public Estudiante(String n, String a, int e, double mat){
         super(n, a, e);
-        setMatricula(mat);
+        matricula = mat;
     }
     
     @Override
